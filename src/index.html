@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Angular version | Angulr</title>
+    <meta name="description" content="Angularjs, Html5, Music, Landing, 4 in 1 ui kits package" />
+    <meta name="keywords" content="AngularJS, angular, bootstrap, admin, dashboard, panel, app, charts, components,flat, responsive, layout, kit, ui, route, web, app, widgets" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="../libs/assets/animate.css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="../libs/assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="../libs/assets/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+    <link rel="stylesheet" href="../libs/angular/angular-material/angular-material.css" type="text/css" />
+    <link rel="stylesheet" href="../libs/jquery/bootstrap/dist/css/bootstrap.css" type="text/css" />
+    <!-- build:css css/app.material.css -->
+    <link rel="stylesheet" href="css/material-design-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/md.css" type="text/css" />
+    <link rel="stylesheet" href="css/font.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <!-- endbuild -->
+
+    <!-- build:css css/app.libs.css -->
+    <link rel="stylesheet" href="../libs/jquery/fullcalendar/dist/fullcalendar.css" type="text/css" />
+    <link rel="stylesheet" href="../libs/jquery/fullcalendar/dist/fullcalendar.theme.css" type="text/css" />
+
+    <link rel="stylesheet" href="../libs/jquery/bootstrap-daterangepicker/daterangepicker-bs3.css" type="text/css" />
+    <link rel="stylesheet" href="../libs/jquery/footable/v3/css/footable.bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../" type="text/css" />
+    <link rel="stylesheet" href="../" type="text/css" />
+
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="../libs/angular/angular-ui-grid/ui-grid.min.css" type="text/css" />
+
+</head>
+
+<body ng-controller="AppCtrl" layout="row">
+    <div layout="column" flex>
+        <div ng-init="app.settings.container = false;" class="md-navbar navbar deep-orange md-whiteframe-z1" data-ng-include=" 'tpl/blocks/material.header.html' ">
+        </div>
+        <div layout="row">
+            <!-- menu -->
+            <div flex class="bg-white md-whiteframe-z0 md-aside md-content hidden-xs" data-ng-include=" 'tpl/blocks/material.aside.html' ">
+            </div>
+            <!-- / menu -->
+
+            <!-- view -->
+            <div flex layout="column">
+                <div ui-butterbar></div>
+                <a href class="off-screen-toggle hide" ui-toggle-class="off-screen" data-target=".md-aside"></a>
+                <div class="md-content" ui-view></div>
+            </div>
+            <!-- / view -->
+        </div>
+    </div>
+    <!-- build:js js/app.libs.js -->
+    <script src="../libs/jquery/jquery/dist/jquery.js"></script>
+    <script src="../libs/jquery/moment/moment.js"></script>
+
+    <script src="../libs/jquery/screenfull/dist/screenfull.min.js"></script>
+
+    <!-- charting tools -->
+    <script src="../libs/jquery/jquery.sparkline/dist/jquery.sparkline.retina.js"></script>
+
+    <script src="../libs/jquery/flot/jquery.flot.js"></script>
+    <script src="../libs/jquery/flot/jquery.flot.pie.js"></script>
+    <script src="../libs/jquery/flot/jquery.flot.resize.js"></script>
+    <script src="../libs/jquery/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="../libs/jquery/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../libs/jquery/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <!-- /charting -->
+
+    <script src="../libs/jquery/jquery.easy-pie-chart/dist/jquery.easypiechart.fill.js"></script>
+    <script src="../libs/jquery/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="../libs/jquery/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="../libs/jquery/footable/v3/js/footable.min.js"></script>
+    <script src="../"></script>
+    <script src="../"></script>
+    <script src="../"></script>
+
+
+    <script src="../libs/jquery/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- build:js js/app.material.js -->
+
+    <!-- Angular -->
+    <script src="../libs/angular/angular/angular.js"></script>
+
+    <script src="../libs/angular/angular-animate/angular-animate.js"></script>
+    <script src="../libs/angular/angular-aria/angular-aria.js"></script>
+    <script src="../libs/angular/angular-cookies/angular-cookies.js"></script>
+    <script src="../libs/angular/angular-messages/angular-messages.js"></script>
+    <script src="../libs/angular/angular-resource/angular-resource.js"></script>
+    <script src="../libs/angular/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../libs/angular/angular-touch/angular-touch.js"></script>
+    <!-- ngMaterial -->
+    <script src="../libs/angular/angular-material/angular-material.js"></script>
+
+    <script src="../libs/angular/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../libs/angular/ngstorage/ngStorage.js"></script>
+    <script src="../libs/angular/angular-ui-utils/ui-utils.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../libs/angular/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+    <script src="../libs/angular/ngstorage/ngStorage.js"></script>
+
+
+    <!-- translate -->
+    <script src="../libs/angular/angular-translate/angular-translate.js"></script>
+    <script src="../libs/angular/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="../libs/angular/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+    <script src="../libs/angular/angular-translate-storage-local/angular-translate-storage-local.js"></script>
+
+    <!-- other -->
+
+    <script src="../libs/angular/angular-ui-calendar/src/calendar.js"></script>
+    <script src="../libs/angular/angular-ui-grid/ui-grid.min.js"></script>
+
+
+
+    <!-- App -->
+    <script src="js/modules.js"></script>
+    <!-- endbuild -->
+    <!-- Lazy loading -->
+</body>
+
+</html>

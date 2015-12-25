@@ -1,0 +1,5 @@
+.DS_Store
+angular/
+bower_components/
+libs/
+node_modules/
