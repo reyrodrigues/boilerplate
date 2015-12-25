@@ -120,7 +120,8 @@ module.exports = {
                 cwd:  'bower_components',
                 expand: true
             },
-            {src: '**', cwd: 'bower_components/bootstrap/dist/fonts', dest: 'src/fonts', expand: true}
+            {src: '**', cwd: 'bower_components/bootstrap/dist/fonts', dest: 'src/fonts', expand: true},
+            {src: '**', cwd: 'libs', dest: 'angular/libs', expand: true}
         ]
     },
     angular: {
